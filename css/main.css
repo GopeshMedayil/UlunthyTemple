@@ -38,28 +38,34 @@ a{
     margin-top: 15px;
 }
 .in > ul > li{
-    margin-top:5px;
+    /*margin-top:5px;*/
     border-bottom: 1px solid #e1e1e1;
+
 }
 .in > ul > li:last-child{
     border-bottom: 0px solid #e1e1e1;
 }
 .in > ul > li > a{
     background: transparent;
-    margin-bottom: 5px !important;
-    margin-top: 5px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    /*margin-bottom: 5px !important;*/
+    /*margin-top: 5px !important;*/
 }
 .navbar-nav > li > a{
+    height: 62px;
+    line-height: 62px!important;
     font-size: 12px;
     color: #474747;
-    margin-bottom: 12px !important;
-    margin-top: 10px !important;
-    background:url(../images/nav_seperator.png) no-repeat right;
+    padding-top: 0;
+    margin-left: 1px;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    background:url(../images/nav_seperator-.png) no-repeat right;
 }
 .navbar-inverse .navbar-nav > li > a:hover,.navbar-inverse .navbar-nav > li > a.active, .navbar-inverse .navbar-nav > li > a:focus{
-    color: #fff;
     background: #fc1707;
-    border-radius: 20px;
+    color: #fff;
 }
 .navbar-inverse .navbar-toggle{
     background:#fc1707;
@@ -136,7 +142,7 @@ header.carousel .fill {
 /* Footer Styles */
 
 .border-none{
-    background-image: none!important;
+    /*background: none!important;*/
 }
 .main_color{
     color: #666666;
@@ -209,7 +215,7 @@ header.carousel .fill {
 .container_block p{
     font-size: 26px;
     font-weight: normal;
-    text-align: center;
+    /*text-align: center;*/
     margin-bottom: 35px;
     margin-top: 10px;
 }
@@ -271,7 +277,7 @@ header.carousel .fill {
     text-decoration: none;
   }
 .heading{
-    border-left:5px solid #fc1707;
+    border-left:5px solid #feed00;
     font-weight: bold;
     padding: 7px 0;
     background:#f8f8f8;
@@ -500,7 +506,7 @@ header.carousel .fill {
     color: #666666;
     font-size: 13px;
     font-weight: normal;
-    text-align: left;
+    /*text-align: left;*/
     margin-bottom: 25px !important;
     margin-top: 5px !important;
 }
@@ -614,95 +620,6 @@ header.carousel .fill {
     margin-bottom:20px !important;
 }
 
-.team-member {
-    text-align: center;
-    padding: 20px 20px;
-    padding-bottom: 0;
-    background-color: #f5f5f5;
-    margin: 0 0 20px 0;
-    float: left;
-}
-
-.team-member-thumb {
-    width: 198px;
-    height: 198px;
-    margin: auto;
-    margin-bottom: 20px;
-   
-}
-.team-member-thumb img:hover {
-    opacity: 1;
- /*Reflection*/
- /*Glow*/
-    -webkit-box-shadow: 0px 0px 20px rgba(81, 203, 238, 1);
-    -moz-box-shadow: 0px 0px 20px rgba(81, 203, 238, 1);
-    box-shadow: 0px 0px 20px rgba(81, 203, 238, 1);
-}
-.team-member-thumb img {
-    width: 198px;
-    border: 1px solid #b5b9bd;
-    vertical-align: middle;
-     /*Transition*/
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
- /*Reflection*/
-}
-.img-circle{
-     border-radius: 50%;  
-}
-img {
-border: 0;
-}
-.member_name {
-    display: block;
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-bottom: 2px;
-    color: #656565;
-}
-.member_position {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 12px;
-    color: #e42382;
-    margin-bottom: 8px;
-}
-.team-member > p {
-    margin-bottom: 0px !important;
-    color: #8d8c8c;
-    font-size: 14px;
-    width: 100%;
-    text-align: center;
-}
-.member-social-link {
-    margin: 0px 0px 20px 0px;
-    padding: 0px;
-    list-style: none;
-    text-align: center;
-}
-.member-social-link li {
-    display: inline-block!important;
-    line-height: 24x;
-    float: none !important;
-    margin: 0px 0 0px 0 !important;
-}
-.member-social-link li a {
-    display: inline-block;
-    font-size: 20px;
-    padding: 0px 10px;
-    color: #ccc;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -777,4 +694,19 @@ border: 0;
     .activities li{
     width: 97%;
 }
+}
+.mal_font{
+    font-family: "ML-TTKarthika Normal"!important;
+    font-size: 18px!important;
+}
+
+.float-left{
+    float: left!important;
+}
+.ml10{
+    margin-left: 10px;
+}
+.mb25{
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
