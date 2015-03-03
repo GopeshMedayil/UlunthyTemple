@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Ulunthy Parthasarathy Temple</title>
+    <title>:. Ulunthy Parthasarathy Temple .:</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +16,6 @@
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/fonts.css" rel="stylesheet">
-    
 </head>
 
 <body id="top" class="stretched">
@@ -66,7 +65,7 @@
         <div class="carousel-inner">
             <div class="item active">
                 <div class="fill">
-                    <img src="images/slide8.jpg">
+                    <img src="images/slide1.png">
                 </div>
             </div>
         </div>
@@ -93,76 +92,50 @@
                         <div class="content twelve units m-b-30">
                             <div class="container width100 contents-block-contacts">
                                 <div class="row">
-                                    <!-- <div class="col-md-12">
-                                        <div class="heading">Bhagavad Gita</div>
-                                    </div> -->
 
-                                    <div class="col-md-8 clearfix">
-                                        <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+
+                                    <div class="col-md-12 clearfix" id="map-canvas" style="height:300px;">
+
 
                                     </div>
-                                    <div class="col-md-4 clearfix">
-                                        <h3>Contact Details</h3>
-                                        <p>3481 Melrose Place
-                                            <br>Beverly Hills, CA 90210
-                                            <br>
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-phone"></i> 
-                                            <abbr title="Phone">P</abbr>: (123) 456-7890
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-envelope-o"></i> 
-                                            <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a>
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-clock-o"></i> 
-                                            <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
-                                        </p>
-                                        <ul class="list-unstyled list-inline list-social-icons">
-                                            <li>
-                                                <a href="#" class="red"><i class="fa fa-facebook-square fa-2x "></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="red"><i class="fa fa-linkedin-square fa-2x "></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="red"><i class="fa fa-twitter-square fa-2x "></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="red"><i class="fa fa-google-plus-square fa-2x "></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
 
                                     <div class="col-md-8 clearfix">
                                         <h3>Send us a Message</h3>
-                                        <form name="sentMessage" id="contactForm" novalidate
- action="#">
+                                        <div class="alert alert-success" id="success" style="display:none;">
+                                            <a href="#" class="close" data-dismiss="alert">&times;</a>
+                                            <div class="contactmsg"></div>
+                                        </div>
+                                        <form class="myfirstform" role="form">
                                             <div class="control-group form-group">
                                                 <div class="controls">
-                                                    <label class="control-label">Full Name:</label>
-                                                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name." name="name">
+                                                    <label>Full Name:</label>
+                                                    <input type="text" class="form-control" id="name" name="name" required data-validation-required-message="Please enter your name.">
                                                     <p class="help-block"></p>
                                                 </div>
                                             </div>
+
                                             <div class="control-group form-group">
                                                 <div class="controls">
                                                     <label>Email Address:</label>
-                                                    <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                                                    <input type="email" class="form-control" id="email" name="email" required data-validation-required-message="Please enter your email address.">
                                                 </div>
                                             </div>
                                             <div class="control-group form-group">
                                                 <div class="controls">
                                                     <label>Message:</label>
-                                                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                                                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" name="message"></textarea>
                                                 </div>
                                             </div>
-                                            <div id="success"></div>
-                                            <!-- For success/fail messages -->
-                                            <button type="submit" class="btn btn-primary red_bg">Send Message</button>
+                                            <div class="control-group form-group">
+
+                                                <div class="controls" style="margin-left: 40%;">
+
+                                                    <button type="submit" class="btn btn-primary red_bg">Send Message</button>
+
+                                                </div>
+                                            </div>
+
+
                                         </form>
                                     </div>
 
@@ -191,7 +164,7 @@
                     <div class="col-md-11 block">
                         <ul class="footer_menu">
                             <li>
-                                <a href="">HOME</a>
+                                <a href="index.html">HOME</a>
                             </li>
                             <li>
                                 <a href="about.html">History</a>
@@ -242,7 +215,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/jquery.json-2.4.min.js"></script>
 
     <!-- Script to Activate the Carousel -->
     <script>
@@ -250,7 +224,80 @@
         interval: 5000 //changes the speed
     })
     </script>
-   
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    <script>
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(9.266192900000000000, 76.548180000000000000);
+        var mapOptions = {
+            zoom: 13,
+            center: myLatlng
+        }
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Hello World!'
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        $("#success").hide();
+        $.validator.setDefaults({
+            submitHandler: function(form) {
+                $.ajax({
+                    type: "POST",
+                    url: "contactus.php",
+                    data: {
+                        'val': $(".myfirstform").serializeJSON()
+                    }
+                }).done(function(data) {
+                    $("#success").show();
+                    $('html, body').animate({
+                        scrollTop: $("#success").offset().top
+                    }, 2000);
+                    $('.contactmsg').html(data);
+
+                });
+            }
+
+        });
+        $(".myfirstform").validate({
+                rules: {
+                    name: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+
+                        required: true,
+                        maxlength: 300
+                    }
+                },
+                errorClass: "error",
+                highlight: function(label) {
+                    $(label).closest('.form-group').removeClass('has-success').addClass('has-error');
+                },
+
+                success: function(label) {
+                    label
+                        .text('Seems Perfect!').addClass('valid')
+                        .closest('.form-group').addClass('has-success');
+
+                }
+            }
+
+        );
+
+    });
+    </script>
+
 
 </body>
 

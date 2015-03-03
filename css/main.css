@@ -68,7 +68,6 @@ a {
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a.active, .navbar-inverse .navbar-nav > li > a:focus {
     background: #fc1707;
     color: #fff;
-    border-bottom: 5px solid green;
 }
 .navbar-inverse .navbar-toggle {
     background: #fc1707;
@@ -690,4 +689,69 @@ header.carousel .fill {
 .mb25 {
     margin-bottom: 25px;
     margin-top: 25px;
+}
+.team-member {
+    text-align: center;
+    padding: 20px 20px;
+    padding-bottom: 0;
+    background-color: #f5f5f5;
+    margin: 0 0 20px 0;
+    float: left;
+}
+.team-member-thumb {
+    width: 198px;
+    height: 198px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.team-member-thumb img {
+    width: 198px;
+    border: 1px solid #b5b9bd;
+    vertical-align: middle;
+}
+.img-circle {
+    /*  border-radius: 50%;  */
+}
+img {
+    border: 0;
+}
+.member_name {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.member_position {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    color: #e42382;
+    margin-bottom: 8px;
+}
+.team-member > p {
+    margin-bottom: 0px !important;
+    color: #8d8c8c;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+.member-social-link {
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+.member-social-link li {
+    display: inline-block!important;
+    line-height: 24x;
+    float: none !important;
+    margin: 0px 0 0px 0 !important;
+}
+.member-social-link li a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 10px;
+    color: #ccc;
 }

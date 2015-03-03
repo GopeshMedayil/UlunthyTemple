@@ -67,7 +67,7 @@
         <div class="carousel-inner">
             <div class="item active">
                 <div class="fill">
-                    <img src="images/slide6.jpg">
+                    <img src="images/slide1.png">
                 </div>
             </div>
         </div>
@@ -93,109 +93,17 @@
                     <div class="container_block overlap">
                         <div class="content twelve units m-b-30">
                             <div class="container width100 contents-block">
-                                <div class="row">
+                                <div class="row gallery">
                                     <!-- <div class="col-md-12">
                                         <div class="heading">Bhagavad Gita</div>
                                     </div> -->
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="images/img2.jpg" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/img2.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
+									
+									
+                                    
+                                 
 
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="images/slide1.jpg" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/slide1.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="images/img2.jpg" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/img2.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="images/img2.jpg" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/img2.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="images/img2.jpg" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/img2.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="images/img2.jpg" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/img2.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="images/img2.jpg" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/img2.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="images/img2.jpg" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/img2.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="images/img2.jpg" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/img2.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="entry-block">
-                                            <div class="img-holder">
-                                                <a href="" class="fresco img-block" data-fresco-group="unique_name">
-                                                    <img src="images/img2.jpg">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -271,6 +179,34 @@
         interval: 5000 //changes the speed
     })
     </script>
+	
+	<script>
+	$(function(){
+	imagesArray=[];
+		$.ajax({
+			url:"gallery_management.php",
+			dataType: "json",
+			success:function(data){
+			var html ="";
+				imagesArray = data;
+				console.log(data);
+				for(var i= 0; i< data.length;i++){
+				html +='<div class="col-md-4">'+
+                       '<div class="entry-block">'+
+                       '<div class="img-holder">'+
+                       '<a href="images/gallery/'+data[i]+'" class="fresco img-block" data-fresco-group="unique_name">'+
+                       '<img src="images/gallery/'+data[i]+'"></a></div></div> </div>';
+                 }                               
+                                            
+				$('.gallery').html(html);                                        
+                                   
+			},
+			error:function(){
+			}
+		});
+	
+	});
+	</script>
 
 </body>
 
