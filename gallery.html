@@ -186,12 +186,12 @@
             imagesArray = [];
             var IMAGE_LENGTH = 17;
             var html = "";
-            for (var i = 0; i < IMAGE_LENGTH; i++) {
+            for (var i = 1; i <= IMAGE_LENGTH; i++) {
                 html += '<div class="col-md-4">' +
                     '<div class="entry-block">' +
                     '<div class="img-holder">' +
-                    '<a href="images/gallery/' + IMAGE_LENGTH + '.jpg" class="fresco img-block" data-fresco-group="unique_name">' +
-                    '<img src="images/gallery/' + IMAGE_LENGTH + '.jpg"></a></div></div> </div>';
+                    '<a href="images/gallery/' + i + '.jpg" class="fresco img-block" data-fresco-group="unique_name">' +
+                    '<img src="images/gallery/' + i + '.jpg"></a></div></div> </div>';
             }
 
             $('.gallery').html(html);
